@@ -1,2 +1,2 @@
 # TestingSite
-TestdenaliWork Click here : https://github.com/goldengatemlabs/TestingSite
+TestdenaliWork Click here :https://goldengatemlabs.github.io/TestingSite/
