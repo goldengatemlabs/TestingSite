@@ -639,7 +639,7 @@ footer {
     .da-slider {
         width: 100%;
         min-width: initial;
-        height: 400px;
+        height: 800px;
         margin: 0px auto;
     }
 
@@ -686,7 +686,7 @@ footer {
     .da-slider {
         width: 100%;
         min-width: initial;
-        height: 205px;
+        height: 405px;
         position: relative;
         margin: 0 auto;
     }
@@ -736,7 +736,7 @@ footer {
     .da-slider {
         width: 100%;
         min-width: initial;
-        height: 145px;
+        height: 245px;
         position: relative;
         margin: 0 auto;
     }
