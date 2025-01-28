@@ -19,7 +19,7 @@
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	top: 0px;
+	top: 150px;
 	left: 0px; 
 	text-align: left;
 }
@@ -141,7 +141,7 @@
 }
 .da-arrows span{
 	position: absolute;
-	top: 50%;
+	top: 60%;
 	height: 30px;
 	width: 30px;
 	border-radius: 50%;
