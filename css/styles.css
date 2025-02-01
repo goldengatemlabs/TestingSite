@@ -541,6 +541,15 @@ body {
     font-family: Arial, sans-serif;
 }
 
+videoMain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  max-height: 100%;
+  min-width: 100%;
+}
+
 #navigation {
     position: fixed;
     top: 0;
@@ -773,12 +782,5 @@ footer {
         display: inline-block;
         margin: 0 0 23px 5px;
     }
-    videoMain {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  max-height: 100%;
-  min-width: 100%;
-}
+    
 }
