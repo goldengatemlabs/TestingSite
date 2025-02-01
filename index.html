@@ -259,12 +259,18 @@
 <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas="">
               <div id="header" class="header goldheader">
               <div class="header-inner">
-        	<div class="parentunit">
-			<a href="/" >College of Veterinary Medicine</a>
-		</div>
-
-		<div class="unit-logo"><a href="https://vetmed.umn.edu/departments/department-veterinary-and-biomedical-sciences" class="unit-site-name">Department of Veterinary and Biomedical Sciences</a>
-		</div>
+        	<tr><td colspan="6" width="100%">
+	<table style="width:100%; cell-padding:10px; cell-spacing:10x; border:none;">
+	  <tbody><tr>
+		<td width="250px"><button class="button" id="btnEducation" onclick="showEducationPanel('btnEducation')" style="background-color:#E0E0E0; color:black;">Biographical Info</button></td>
+		<td width="300px"><button class="button" id="btnResearch" onclick="showResearchPanel('btnResearch')">Research &amp; Teaching</button></td>
+		<td width="300px"><button class="button" id="btnPublications" onclick="showPublicationsPanel('btnPublications')">Publications &amp; Articles</button></td>
+		<td width="250px"><button class="button" id="btnMisc" onclick="showMiscPanel('btnMisc')">Research Grants</button></td>  
+		<td width="300px"><button class="button" id="btnPatents" onclick="showPatentsPanel('btnPatents')">Patents &amp; Innovations</button></td>
+		<td width="150px"><button class="button" id="btnNews" onclick="showNewsPanel('btnNews')">Awards</button></td>
+	 </tr><tr>	
+	</tr></tbody></table>	
+	</td></tr>
        	     </div>
     </div>
 	<!-- END HEADER -->
