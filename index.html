@@ -1,20 +1,227 @@
-<!doctype html>
-<!--[if IE 7 ]>    <html lang="en-gb" class="isie ie7 oldie no-js"> <![endif]-->
-<!--[if IE 8 ]>    <html lang="en-gb" class="isie ie8 oldie no-js"> <![endif]-->
-<!--[if IE 9 ]>    <html lang="en-gb" class="isie ie9 no-js"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en-gb" class="no-js"> <!--<![endif]-->
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <!--[if lt IE 9]> 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <![endif]-->	
-	<title>Web Trends - Single page website</title>	
-	<meta name="description" content="">
-	<meta name="author" content="webThemez">    
-    <!--[if lt IE 9]>
-        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->     
+<title>Dr Hemant K Mishra</title>
+<!--	None of this mobile stuff will work if you don't use a viewport meta tag -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../css/2015-mo.css">
+<link rel="stylesheet" href="../css/styleSheet.css">
+<script src="../js/umnhf-2015.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+<!-- HTML5 Support for IE -->
+<script src="/js/html5shiv-printshiv.js"></script>
+	<script>
+
+		function myFunction() {
+		   window.location.href ="publications/publicationlist.html"
+		}
+
+		var count=1;
+		
+		  function showEducationPanel(btnEducation) 
+		{
+		  var x = document.getElementById("divEducationPanel");
+	          var property = document.getElementById(btnEducation); 
+		  
+		
+		    if(x.style.display=="none") 
+		    {
+			x.style.display = "block";
+			property.style.backgroundColor ="#E0E0E0";
+			property.style.color="black";   
+			 
+				
+			 document.getElementById("btnResearch").style.backgroundColor ="#333333";
+			 document.getElementById("btnResearch").style.color = "#ffcc33";   
+			 document.getElementById("btnPublications").style.backgroundColor ="#333333";
+			 document.getElementById("btnPublications").style.color = "#ffcc33"; 
+			 document.getElementById("btnMisc").style.backgroundColor ="#333333";  
+			 document.getElementById("btnMisc").style.color = "#ffcc33";
+			 document.getElementById("btnPatents").style.backgroundColor ="#333333";    
+			 document.getElementById("btnPatents").style.color = "#ffcc33";   
+			 document.getElementById("btnNews").style.backgroundColor ="#333333"; 
+			 document.getElementById("btnNews").style.color = "#ffcc33";
+			    
+			  document.getElementById("divResearchPanel").style.display="none";   
+			  document.getElementById("divPublicationsPanel").style.display="none";      
+			  document.getElementById("divMiscPanel").style.display="none"; 
+			  document.getElementById("divPatentsPanel").style.display="none";   
+			  document.getElementById("divNewsPanel").style.display="none";     
+			
+			    
+		    } else
+		    {
+			x.style.display = "none";
+			property.style.backgroundColor ="#333333";
+			property.style.color ="#ffcc33";
+			
+		    }
+		  }
+  		function showResearchPanel(btnResearch) 
+		{
+		  var x =   document.getElementById("divResearchPanel");
+	          var property1 = document.getElementById(btnResearch);  		  
+		    if(x.style.display=="none") 
+		    { 
+			  x.style.display = "block";  
+			  property1.style.backgroundColor ="#E0E0E0";
+			  property1.style.color="black";  
+			 document.getElementById("btnEducation").style.backgroundColor ="#333333";
+			 document.getElementById("btnEducation").style.color = "#ffcc33";   
+			 document.getElementById("btnPublications").style.backgroundColor ="#333333";
+			 document.getElementById("btnPublications").style.color = "#ffcc33";      
+			 document.getElementById("btnMisc").style.backgroundColor ="#333333";  
+			 document.getElementById("btnMisc").style.color = "#ffcc33";   
+			 document.getElementById("btnPatents").style.backgroundColor ="#333333";    
+			 document.getElementById("btnPatents").style.color = "#ffcc33";   
+			 document.getElementById("btnNews").style.backgroundColor ="#333333";    
+			 document.getElementById("btnNews").style.color = "#ffcc33";   
+			    
+			  document.getElementById("divEducationPanel").style.display="none";   
+			  document.getElementById("divPublicationsPanel").style.display="none";      
+			  document.getElementById("divMiscPanel").style.display="none"; 
+			   document.getElementById("divPatentsPanel").style.display="none";  
+			  document.getElementById("divNewsPanel").style.display="none";       
+		    } 
+			else 
+			{
+			  property1.style.backgroundColor ="#333333";
+			  document.getElementById("divMiddlePanel").style.display="none";   
+		    	}
+		  }
+		
+		function showPublicationsPanel(btnPublications) 
+		{
+		  var x = document.getElementById("divPublicationsPanel");
+	          var property2 = document.getElementById(btnPublications);  		  
+		    if(x.style.display=="none")
+		    {
+			x.style.display = "block";
+			 property2.style.backgroundColor ="#E0E0E0";  
+			 property2.style.color="black";   
+			 document.getElementById("btnEducation").style.backgroundColor ="#333333";
+			 document.getElementById("btnEducation").style.color = "#ffcc33";
+			 document.getElementById("btnResearch").style.backgroundColor ="#333333";
+			 document.getElementById("btnResearch").style.color = "#ffcc33";
+			 document.getElementById("btnMisc").style.backgroundColor ="#333333"; 
+			 document.getElementById("btnMisc").style.color = "#ffcc33"; 
+			 document.getElementById("btnPatents").style.backgroundColor ="#333333";    
+			 document.getElementById("btnPatents").style.color = "#ffcc33";
+			 document.getElementById("btnNews").style.backgroundColor ="#333333";  
+			 document.getElementById("btnNews").style.color = "#ffcc33";    
+			    
+			  document.getElementById("divEducationPanel").style.display="none";   
+			  document.getElementById("divResearchPanel").style.display="none";      
+			  document.getElementById("divMiscPanel").style.display="none";  
+			  document.getElementById("divPatentsPanel").style.display="none";    
+			  document.getElementById("divNewsPanel").style.display="none";   
+		    } else 
+		    {
+			    property2.style.backgroundColor ="#333333";
+			x.style.display = "none";
+		    }
+		  }
+		
+		
+		function showMiscPanel(btnMisc) 
+		{
+		  var x = document.getElementById("divMiscPanel");
+	          var property2 = document.getElementById(btnMisc);  		  
+		    if(x.style.display=="none")
+		    {
+			x.style.display = "block";
+			 property2.style.backgroundColor ="#E0E0E0";  
+			 property2.style.color="black";   
+			    
+			 document.getElementById("btnEducation").style.backgroundColor ="#333333";
+			 document.getElementById("btnEducation").style.color = "#ffcc33";      
+			 document.getElementById("btnResearch").style.backgroundColor ="#333333";
+			 document.getElementById("btnResearch").style.color = "#ffcc33";      
+			 document.getElementById("btnPublications").style.backgroundColor ="#333333";  
+			 document.getElementById("btnPublications").style.color = "#ffcc33"; 
+			 document.getElementById("btnPatents").style.backgroundColor ="#333333";    
+			 document.getElementById("btnPatents").style.color = "#ffcc33";    
+			 document.getElementById("btnNews").style.backgroundColor ="#333333";    
+			 document.getElementById("btnNews").style.color = "#ffcc33";      
+			    
+			  document.getElementById("divEducationPanel").style.display="none";   
+			  document.getElementById("divResearchPanel").style.display="none";      
+			  document.getElementById("divPublicationsPanel").style.display="none"; 
+			   document.getElementById("divPatentsPanel").style.display="none";    
+			  document.getElementById("divNewsPanel").style.display="none";  
+		    } else 
+		    {
+			    property2.style.backgroundColor ="#333333";
+			x.style.display = "none";
+		    }
+		  }
+		
+	    function showPatentsPanel(btnPatents) {
+		  var x = document.getElementById("divPatentsPanel");
+	          var property2 = document.getElementById(btnPatents);  		  
+		    if(x.style.display=="none")
+		    {
+			x.style.display = "block";
+			 property2.style.backgroundColor ="#E0E0E0";  
+			 property2.style.color="black";   
+			 document.getElementById("btnEducation").style.backgroundColor ="#333333";
+			 document.getElementById("btnEducation").style.color = "#ffcc33";         
+			 document.getElementById("btnResearch").style.backgroundColor ="#333333";
+			 document.getElementById("btnResearch").style.color = "#ffcc33";          
+			 document.getElementById("btnPublications").style.backgroundColor ="#333333";  
+			 document.getElementById("btnPublications").style.color = "#ffcc33";          
+			 document.getElementById("btnMisc").style.backgroundColor ="#333333";    
+			 document.getElementById("btnMisc").style.color = "#ffcc33";         
+			  document.getElementById("btnNews").style.backgroundColor ="#333333";    
+			 document.getElementById("btnNews").style.color = "#ffcc33";
+			 
+			  document.getElementById("divEducationPanel").style.display="none";   
+			  document.getElementById("divResearchPanel").style.display="none";      
+			  document.getElementById("divPublicationsPanel").style.display="none";   
+			  document.getElementById("divMiscPanel").style.display="none"; 
+			   document.getElementById("divNewsPanel").style.display="none";   
+		    } else
+		    {
+			    property2.style.backgroundColor ="#333333";
+			x.style.display = "none";
+		    }
+		  }
+		
+		function showNewsPanel(btnNews) {
+		  var x = document.getElementById("divNewsPanel");
+	          var property2 = document.getElementById(btnNews);  		  
+		    if(x.style.display=="none")
+		    {
+			x.style.display = "block";
+			 property2.style.backgroundColor ="#E0E0E0";  
+			 property2.style.color="black";   
+			 document.getElementById("btnEducation").style.backgroundColor ="#333333";
+			 document.getElementById("btnEducation").style.color = "#ffcc33";         
+			 document.getElementById("btnResearch").style.backgroundColor ="#333333";
+			 document.getElementById("btnResearch").style.color = "#ffcc33";          
+			 document.getElementById("btnPublications").style.backgroundColor ="#333333";  
+			 document.getElementById("btnPublications").style.color = "#ffcc33";          
+			 document.getElementById("btnMisc").style.backgroundColor ="#333333";    
+			 document.getElementById("btnMisc").style.color = "#ffcc33"; 
+			 document.getElementById("btnPatents").style.backgroundColor ="#333333";    
+			 document.getElementById("btnPatents").style.color = "#ffcc33";    
+			    
+			  document.getElementById("divEducationPanel").style.display="none";   
+			  document.getElementById("divResearchPanel").style.display="none";      
+			  document.getElementById("divPublicationsPanel").style.display="none";   
+			  document.getElementById("divMiscPanel").style.display="none";  
+			   document.getElementById("divPatentsPanel").style.display="none";    
+		    } else
+		    {
+			    property2.style.backgroundColor ="#333333";
+			x.style.display = "none";
+		    }
+		  }
+		
+</script>
+
 <link rel="stylesheet" href="css/bootstrap.min.css" />  
 <link rel="stylesheet" type="text/css" href="css/isotope.css" media="screen" />	
 <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
@@ -25,21 +232,949 @@
 </head>
 
 <body>
-<header class="header">
-	<div class="container">
-		<nav class="navbar navbar-inverse" role="navigation">
-        	<div class="navbar-header">
-	           
-	            <a href="#" class="navbar-brand scroll-top logo"><b>Web</b>Trends</a>
-        	</div>
-        	<!--/.navbar-header-->
-	      
-	        <!--/.navbar-collapse-->
-	    </nav>
-	    <!--/.navbar-->
+<body><!-- inline style for sample display purposes only. Please don't use it. -->
+	<!-- BEGIN HEADER -->
+	<header class="umnhf" id="umnhf-h" width="100%">
+		<!-- Skip Links: Give your nav and content elements the appropriate ID attributes -->
+		<div id="skipLinks"><a href="#main-nav">Main navigation</a><a href="#main-content">Main content</a></div>
+		<div class="printer"><div class="left"></div><div class="right"><strong>University of Minnesota Twin Cities</strong><br />http://www.twin-cities.umn.edu/index.php<br />888-866-3382</div></div>
+		<div class="umnhf" id="umnhf-h-mast">
+			<a class="umnhf" id="umnhf-h-logo" href="http://www.twin-cities.umn.edu/index.php"><span>Go to the U of M Twin Cities home page</span></a>
+			<!-- REMOVE CAMPUS LINKS FOR INTERNAL PAGES -->
+			<ul id="umnhf-h-cl"><li><a href="#">Crookston</a></li><li><a href="#">Duluth</a></li><li><a href="#" >Morris</a></li><li><a href="#">Rochester</a></li><li><a href="#" class="umnhf home">Twin Cities</a></li></ul>
+			<ul class="umnhf" id="umnhf-h-ql">
+				<li><a href="http:///onestop.umn.edu/">One Stop</a></li>
+				<li class="umnhf"><a href="https://www.myu.umn.edu/">MyU <span></span>: Students, Faculty and Staff</a></li>
+			</ul>
+			<button class="umnhf" id="umnhf-m-search" >Search</button>
+		</div>
+		<form class="umnhf" id="umnhf-h-search" action="//search.umn.edu/tc/" method="get" title="Search Websites and People">
+			<label class="umnhf" for="umnhf-h-st">Search</label>
+			<input class="umnhf" id="umnhf-h-st" type="text" name="q" />
+			<label class="umnhf" for="umnhf-h-sb">Submit search query</label>
+			<input class="umnhf" id="umnhf-h-sb" type="submit" value="" label="Search">
+		</form>
+	</header>
+<div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas="">
+              <div id="header" class="header goldheader">
+              <div class="header-inner">
+        	<div class="parentunit">
+			<a href="/" >College of Veterinary Medicine</a>
+		</div>
+
+		<div class="unit-logo"><a href="https://vetmed.umn.edu/departments/department-veterinary-and-biomedical-sciences" class="unit-site-name">Department of Veterinary and Biomedical Sciences</a>
+		</div>
+       	     </div>
+    </div>
+	<!-- END HEADER -->
+	<!-- UNIT SPECIFIC CONTENT -->
+	<a name="main-nav"></a>
+	<a name="main-conent"></a>
+	<main id="umn-main">
+		<div id="container">
+  
+    <img src="https://github.com/mishraspring/mishraspring.github.io/blob/master/HKM_Headshot.jpg?raw=true" id="pic">
+<div class="row">
+    <div id="content-contact">Hemant K Mishra, MS, Ph.D.</div> 
+  <div id="content-contactInfo">
+	   <div class="role-and-dept"> Research Faculty and Instructor</div><br/>
+	  <div class="role-and-dept">Cancer Immunotherapy and Host-pathogen interactions</div><br/>
+	  <div class="role-and-dept">Co-director Protein Core Facility,</div>
+	  <div class="role-and-dept">University of Minnesota</div><br/>
+	  <div class="role-and-dept">Director, Research and Editing, Superior Medical Experts</div>
 	</div>
-	<!--/.container-->
-</header>
+<div id="content-contactAddress">		
+	<h2>Contact </h2>
+	   
+	    Address: Room 295 AnSci/VM </br> 6010A (Campus Delivery Code)</br>
+		     Veterinary & Biomedical Sciences</br> 1988 Fitch Ave St Paul, MN 55108 </br>
+		Phone: 612-226-4672</br>
+	   Email: hemantkmishra@umn.edu, hemantkmishra@gmail.com</br> 
+
+    <div id="content-body">
+   <div id="content-summary">
+   <div id="content-summarycontent">
+  <p>Our research focus is oriented towards investigating the regulated proteolysis of various cell surface proteins and their applications in
+	  tumor immunology, dysregulated immune responses during severe infection, and host-pathogen interactions. Currently, we are investigating 
+	  various mechanisms to enhance the tumor-killing abilities of genetically engineered human-induced pluripotent stem cell (iPSC) derived NK 
+	  (Natural Killer) and T cells. We are also evaluating their efficacy via various in-vitro assays and utilizing multiple tumor xenograft murine
+	  models as well to assess their in-vivo tumor-killing potencies. Along with that, I am investigating various mechanisms to have a cytokine-mediated 
+	  enhanced, sustained, and renewable NK cell expansion and proliferation in these mice. Furthermore, We are also performing various preclinical studies
+	  to understand the dysregulated immune responses during severe infection and to unravel the pathophysiology of sepsis for novel and effective treatment,
+	  management, and prophylactic approaches. I am a Co-director of a protein core facility at Veterinary and Biomedical Science at the University of 
+	  Minnesota with years of teaching, training, and mentoring experience to students, faculty, and staff in the area of basic and advanced immunology 
+	  involving hands-on training on flow cytometry. My academic interest in teaching is focused on immunology, cellular and molecular biology and I teach 
+	  the CMB8202 course (Adaptive Immunity and Cancer Immunotherapy).   
+    <a href="https://www.linkedin.com/in/hemantkmishra/">LinkedIn Profile</a> </div>
+	</p>
+      </div>
+
+<div id="mainPanel" style="margin-top:-30px;">
+<table style="width :100%; align:left;">
+<tr><td colspan="6" width="100%">
+	<table style="width:100%; cell-padding:10px; cell-spacing:10x; border:none;" >
+	  <tr>
+		<td width="250px"><button class="button"  id="btnEducation" onclick="showEducationPanel('btnEducation')" style="background-color:#E0E0E0; color:black;">Biographical Info</button></td>
+		<td width="300px"><button  class="button" id="btnResearch" onclick="showResearchPanel('btnResearch')">Research & Teaching</button></td>
+		<td width="300px"><button class="button" id="btnPublications" onclick="showPublicationsPanel('btnPublications')">Publications & Articles</button></td>
+		<td width="250px"><button class="button" id="btnMisc" onclick="showMiscPanel('btnMisc')">Research Grants</button></td>  
+		<td width="300px"><button class="button" id="btnPatents" onclick="showPatentsPanel('btnPatents')">Patents & Innovations</button></td>
+		<td width="150px"><button class="button" id="btnNews" onclick="showNewsPanel('btnNews')">Awards</button></td>
+	 <tr>	
+	</table>	
+	</tr>
+<tr>
+ <td>
+ <div id="divEducationPanel" >
+	<div id="content-professional" style="border:solid; border-width:1px; border-color:grey;"> 
+		<div id="content-professionalheader">Education</div>
+		<p> Ph.D. | 2011
+		ALL INDIA INSTITUTE OF MEDICAL SCIENCES, New Delhi, India </p>
+		<p>M.Sc. in Biotechnology | 2003 
+		JAMIA, MILLIA ISLAMIA, New Delhi, India </p>
+		<p> B.Sc. (Hon) | 2000
+		DELHI UNIVERSITY, New Delhi, India </p>
+	 
+	 <div id="content-professionalheader">Research Experience</div>
+		<p> Research Faculty and Instructor | 2017 to Present 
+		DEPARTMENT OF VETERINARY AND BIOMEDICAL SCIENCES, University of Minnesota </p>
+		<p> Senior Research Scientist | 2015 to 2017
+		DEPARTMENT OF VETERINARY AND BIOMEDICAL SCIENCES, University of Minnesota </p>
+		<p> Post-Doctoral Research Associate | 2012 to 2015
+		DEPARTMENT OF VETERINARY AND BIOMEDICAL SCIENCES, University of Minnesota  </p>
+		<p> Post-Doctoral Fellow, Sickle Cell Pain Biology Research | 2011 to 2012
+		DEPARTMENT OF MEDICINE-DIVISION OF HEMATOLOGY, ONCOLOGY & TRANSPLANTATION, University of Minnesota </p>
+		<p> CSIR- Junior Research Fellow | 2003 to 2005
+		ALL INDIA INSTITUTE OF MEDICAL SCIENCES, New Delhi, India </p>
+		<p> Visiting Scholar | 2003 
+		ALL INDIA INSTITUTE OF MEDICAL SCIENCES, New Delhi, India </p>
+	 	
+	
+	 
+	  <div id="content-professionalheader">MISHRA's Laboratory Resources</div>
+	 <p> <a href="https://www.quartzy.com/"><b> Quartzy: Lab management software</b> </a> <p>
+	 <p> <a href="https://www.softmouse.net/"><b>SoftMouse: Mouse colony management</b> </a> <p>
+	 <p> <a href="https://umarket.umn.edu/"><b>U Market: E-procurement website</b> </a> <p>
+	 <p> <a href="https://www.oglcnac.mcw.edu/"><b> Human O-GlcNAcome </b> </a> <p>
+	 <p> <a href="http://www.addgene.org/"><b> Addgene: Plasmid repository </b> </a> <p>
+	 <p> <a href="http://dbptm.mbc.nctu.edu.tw/"><b> dbPTM: An integrated resource for PTMs </b> </a> <p>
+	 <p> <a href="https://www.phosphosite.org//homeAction.action"><b> PhosphoSitePlus: PTM database </b> </a> <p>
+	 <p> <a href="http://www.informatics.jax.org/"><b> MGI: Mouse Genome Informatics </b> </a> <p>
+	 <p> <a href="http://www.findmice.org/"><b> IMSR: International Mouse Strain Resource</b> </a> <p>
+	 <p> <a href="https://www.ibiology.org/"><b> iBiology: Free biology videos from the world's leading scientists </b> </a> <p>
+ 	 <p> <a href="https://armandoh.org/"><b> Armando Hasudungan: Biology and Medicine Videos </b> </a> <p>
+ 	 <p> <a href="https://biorender.com/"><b> BioRender: Online tool to create scientific figures </b> </a> <p>
+
+
+		</div>	
+	 	</div>
+	 
+	 
+ </div>
+
+</td>
+<td>
+<div id="divResearchPanel" style="display:none;" >	   
+  <div id="content-professional" style="border:solid; border-width:1px; border-color:grey;"> 
+  <div id="content-professionalheader">Professional Experience</div>
+	<p>•	18+ years of Extensive Research Experience in the area of Immunology, Molecular Biology, and Experimental Therapeutics.</P> 
+	<p>•	10+ years of Teaching Experience in Cell Biology, Immunology, Biochemistry, and Fundamental of Research, Study Design and Biostatistics.</P>
+	<p>•	Certified Lecturer by University Grant Commission, India.</P>
+	<p>•	Currently Teaching Adaptive Immunology Cancer Immunotherapy Course to DVM Students.</P>
+	<p>•	Expert of studying the regulated proteoloysis of cell surface proteins and their significance in the 
+		pathophysiology of a number of disesases and disorders including cancer, host pathogen interactions and sepsis.</P>
+	<p>•	Expert of studying the engineered induced pluripotent stem cell (iPSC) derived Natural Killer and T cells in combination with 
+		other immunomodulators for cancer immunotherapy.</P>
+	<p>•	Expert of studying neutrophil behavior, both in-vitro and in-vivo, during different inflammation events.</P>
+	<p>•	Experience of teaching and desinging courses related to Research Methodologies, Biostatistics, Good Laboratory Practices and Soft Skills to various groups of diverse students.
+	<a href="https://drive.google.com/file/d/15ttThXznAk9bC1V-whOVRs_B8GFf-w77/view?usp=sharing">[<i>Example of a recorded course on study design as an online module</i>] </a> </p> 
+	<p>•	Fluent in various statistical software like STATA and SPSS etc. and working knowledge of programming languages like R, Python, HTML and JAVA.
+
+	<div id="content-professionalheader">Area of Specialization</div>
+		<p> •	Teaching, Training, and Designing College and University Courses </p>
+		<p> •	Expert of Flow Cytometry Applications</p>
+		<p> •	IPSC Derived Cancer Immunotherapies </p>
+		<p> •	Tumor Xenograft Murine Models</p>
+		<p> •	Regulated Proteolysis of Cell Surface Proteins</p>
+		<p> •	Sepsis and Dysregulated Immune Response </p>
+		<p> •	Host Pathogen Interactions</p>
+		<p> •	Expert of Aseptic Survival Surgeries </p>
+		<p> •	Polymicrobial Sepsis through CLP Induction</p>
+		<p> •	QPCR, RNA Sequencing Microarray</p>
+		<p> •	Grant Writing Expert and Senior Editor</p>
+		<p> •	Drug Resistant Microbe and Immune System </p>
+		<p> •	Tumor Imaging in Murine via Ivis Spectrum</p>
+		<p> •	Immunoprecipation, Western Blot </p>
+		<p> •	Cloning and Site Directed Mutagenesis</p>
+
+	</div>
+</div>	
+</td>
+
+<td>
+<div id="divPublicationsPanel" style="display:none;" >
+	  <div id="content-professional" style="border:solid; border-width:1px; border-color:grey;"> 
+		
+	<div id="content-professionalheader">Peer Reviewed Publications (Refereed/Scholarly Journal Articles)</div> </br>
+JA31:	 <b> Mishra HK </b> et. al. A novel mechanism of enhanced and sustained human NK cell proliferation in immunodeficient (NOD-scid-gamma) mouse model through L-selectin regulation for an effective anti tumor response (under preparation).
+		<a href="mishraspring.github.io/blob/Abstract/SLB_Boston.pdf"> <br>
+	<b>[<i>Award Winning Poster Presented at Society of Leukocyte Biology (SLB) annual meeting, Boston in Nov 2019</i>]</b></a>
+  <div class="box">
+  <embed src="mishraspring.github.io/blob/Abstract/SLB_Boston.pdf" width="1100" height="400" />
+  </div> <br> <br>
+
+JA30: Joseph BA, ... <b> Mishra HK </b>, Touchette JC, Kallmes KM. Efficacy and safety of lopinavir/ritonavir in the treatment of COVID-19: A systematic review
+	Expert Rev Anti Infect Ther. 2020 Nov 13. doi: 10.1080/14787210.2021.1848545. <br>
+	
+	<a href="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/Abstract/Liponovir_Abs.pdf"> 
+	<b>[<i>Abstract</i>]</b></a>
+  <div class="box">
+  <embed src="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/Abstract/Liponovir_Abs.pdf" width="1100" height="400" />
+  </div> 
+	<a href="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/Abstract/lopinavir.pdf"> 
+	<b>[<i>Full Text</i>]</b></a>
+  <div class="box">
+  <embed src="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/Abstract/lopinavir.pdf" width="1100" height="400" />
+	  
+</div>
+	
+<br><br>
+	
+JA29:	<b> Mishra HK </b>, Jing M, Daniel CM, Walcheck B. Blocking ADAM17 function with a monoclonal antibody improves sepsis survival in a murine model
+	of polymicrobial sepsis. Int. J. Mol. Sci. 2020, Volume 21, Issue 18, 6688. <br>
+	
+	<a href="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/Abstract/IJMS_Abs.pdf"> 
+	<b>[<i>Abstract</i>]</b></a>
+  <div class="box">
+  <embed src="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/Abstract/IJMS_Abs.pdf" width="1100" height="400" />
+  </div> 
+	<a href="https://drive.google.com/file/d/1M7eQAIgZgJg1yOkSsT1FG23xdhz2b9eq/view?usp=sharing"> 
+	<b>[<i>Full Text</i>]</b></a>
+  <div class="box">
+  <embed src="https://drive.google.com/file/d/1M7eQAIgZgJg1yOkSsT1FG23xdhz2b9eq/view?usp=sharing" width="1100" height="400" />
+</div>
+	<a href="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/Abstract/IJMS_Cer.pdf"> 
+	<b>[<i>Certificate of Publication</i>]</b></a>
+  <div class="box">
+  <embed src="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/IJMS_Cer.pdf" width="1100" height="400" />
+</div><br><br>
+JA28:	 Chamard HA, <b> Mishra HK </b>, Nandi M,  Menendez A, Ilangumaran S, and Ramanathan S. Interleukin-15 in autoimmunity (Cytokine 136 (2020) 155258). <br>
+
+	<a href="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/Abstract/cytokine_abstract.pdf"> 
+	<b>[<i>Abstract</i>]</b></a>
+  <div class="box">
+  <embed src="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/Abstract/cytokine_abstract.pdf" width="1100" height="400" />
+  </div> 
+	<a href="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/cytokine.pdf"> 
+	<b>[<i>Full Text</i>]</b></a>
+  <div class="box">
+  <embed src="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/cytokine.pdf" width="1100" height="400" />
+</div> <br><br>
+		
+JA27: Graupman P, Nussbaum ES, <b>Mishra HK</b> Delayed onset of an intradural epidermoid tumor in the lumbar region after seven 
+  years of spinal anesthesia for childbirth: A case report. Cureus12(9): e10517 (2020).<br>
+	<a href="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/Abstract/cureus_abs.pdf"> 
+	<b>[<i>Abstract</i>]</b></a>
+  <div class="box">
+  <embed src="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/Abstract/cureus_abs.pdf" width="1100" height="400" />
+  </div> 
+  	<a href="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/cureus.pdf">
+		<b>[<i>Full Text</i>]</b></a>
+ <div class="box">
+     <embed src="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/cureus.pdf" width="1100" height="400" />
+</div> <br> <br>
+		
+JA26: <b>Mishra HK</b>, Pore N, Michelotti E, Walcheck B. Anti-ADAM17 monoclonal antibody MEDI3622 increases IFNγ production 
+  by human NK cells in the presence of antibody-bound tumor cells. Cancer Immunol Immunother. 2018 Sep;67(9):1407-1416. <br>
+<a href="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/Abstract/anti-ADAM17.pdf"> 
+	<b>[<i>Abstract</i>]</b></a>
+  <div class="box">
+  <embed src="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/Abstract/anti-ADAM17.pdf" width="1100" height="400" />
+  </div> 
+	<a href="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/Anti-ADAM17 monoclonal antibody MEDI3622 increases IFNγ production by human NK cells in the presence of antibodybound tumor cells.pdf">
+		<b>[<i>Full Text</i>]</b></a>
+  <div class="box">
+     <embed src="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/Anti-ADAM17 monoclonal antibody MEDI3622 increases IFNγ production by human NK cells in the presence of antibodybound tumor cells.pdf" width="1100" height="400" />
+</div> <br>
+<br>
+JA25: Atias Z, Pederson JM, <b>Mishra HK</b>, Greenberger S. The effect of natural matrix biopolymer
+membrane on hard-to-heal venous leg ulcers: a pilot randomised clinical trial Journal of Wound Care. May, 2020 (in-press).<br>
+
+	<a href="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/Abstract/The Effect of Natural.pdf"> 
+	<b>[<i>Abstract</i>]</b></a>
+  <div class="box">
+  <embed src="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/The Effect of Natural.pdf" width="1100" height="400" />
+  </div> 
+	<a href="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/JoWC_29_5_Pederson_040520 BC_fig (3) (1).pdf"> 
+	<b>[<i>Full Text</i>]</b></a>
+  <div class="box">
+  <embed src="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/JoWC_29_5_Pederson_040520 BC_fig (3) (1).pdf" width="1100" height="400" />
+</div> <br><br>
+
+JA24:	Snyder KM, Hullsiek R, <b>Mishra HK</b> et al Expression of a recombinant high affinity IgG Fc receptor by 
+  engineered NK cells as a docking platform for therapeutic mAbs to target cancer cells Front Immunol. 2018 Dec 6; 9:2873. <br>
+	<a href="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/Abstract/Expression of a Recombinant.pdf">
+	<b>[<i>Abstract</i>]</b></a>
+  <div class="box">
+  <embed src="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/Abstract/Expression of a Recombinant.pdf" width="1100" height="400" />
+  </div> 
+	<a href="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/Expression of Recom.pdf">
+		<b>[<i>Full Text</i>]</b></a>
+  <div class="box">
+     <embed src="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/Expression of Recom.pdf" width="1100" height="400" />
+</div> <br> <br>
+
+JA23: <b>Mishra HK</b>, Ma J, Walcheck B Ectodomain Shedding by ADAM17: Its Role in Neutrophil Recruitment and the Impairment of 
+This Process during Sepsis. Front Cell Infect Microbiol. 2017 Apr 25:7:138.<br>
+<a href="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/Abstract/Ectodomain Shedding by ADAM17.pdf">
+	<b>[<i>Abstract</i>]</b></a>
+  <div class="box">
+  <embed src="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/Abstract/Ectodomain Shedding by ADAM17.pdf" width="1100" height="400" />
+  </div> 
+	<a href="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/Ectodomain Shedding by ADAM17.pdf">
+		<b>[<i>Full Text</i>]</b></a>
+  <div class="box">
+     <embed src="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/Ectodomain Shedding by ADAM17.pdf" width="1100" height="400" />
+</div> <br> <br>
+
+JA22:	<b>Mishra HK</b>, Johnson Timothy, Seelig Davis, Walcheck B. Targeting ADAM17 in leukocytes increases neutrophil recruitment 
+  and reduces bacterial spread during polymicrobial sepsis. J Leukoc Biol. 2016 Nov;100(5):999-1004. <br>
+<a href="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/Abstract/Targeting ADAM17.pdf">
+	<b>[<i>Abstract</i>]</b></a>
+  <div class="box">
+  <embed src="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/Abstract/Targeting ADAM17.pdf" width="1100" height="400" />
+  </div> 
+	<a href="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/ Targeting ADAM17 in leukocytes increases neutrophil recruitment and reduces bacterial spread during polymicrobial sepsis.pdf">
+		<b>[<i>Full Text</i>]</b></a>
+  <div class="box">
+     <embed src="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/ Targeting ADAM17 in leukocytes increases neutrophil recruitment and reduces bacterial spread during polymicrobial sepsis.pdf" width="1100" height="400" />
+</div> <br> <br>
+
+JA21:	<b>Mishra HK</b>, Long C, Nooshin SB, Walcheck B. Regulation of CXCR2 expression and function by a disintegrin and
+  metalloprotease-17 (ADAM17). J Leukoc Biol. 2015 Mar;97(3):447-54.<br>
+<a href="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/Abstract/Regulation of CXCR2.pdf">
+	<b>[<i>Abstract</i>]</b></a>
+  <div class="box">
+  <embed src="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/Abstract/Regulation of CXCR2.pdf" width="1100" height="400" />
+  </div> 
+	<a href="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/ Regulation of CXCR2 expression and function by a disintegrin and metalloprotease-17 (ADAM17).pdf">
+		<b>[<i>Full Text</i>]</b></a>
+  <div class="box">
+     <embed src="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/ Regulation of CXCR2 expression and function by a disintegrin and metalloprotease-17 (ADAM17).pdf" width="1100" height="400" />
+ </div>   
+<a href="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/Abstract/ afar.pdf.pdf">
+<b>[<i>Editorial Coverage</i>]</b></a>
+  <div class="box">
+     <embed src="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/Abstract/ afar.pdf" width="1100" height="400" />
+</div>  
+	  
+ <br> <br>	
+	
+JA20:	Wu J, <b> Mishra HK</b>, Walcheck B Role of ADAM17 as a regulatory checkpoint of CD16A in NK cells and a potential target for
+  cancer immunotherapy. J Leukoc Biol. 2019 Jun;105(6):1297-1303.<br>
+ <a href="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/Abstract/Role of ADAM17.pdf">
+	<b>[<i>Abstract</i>]</b></a>
+  <div class="box">
+  <embed src="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/Abstract/Role of ADAM17.pdf" width="1100" height="400" />
+  </div> 
+	<a href="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/Role of ADAM17 as a regulatory.pdf">
+		<b>[<i>Full Text</i>]</b></a>
+  <div class="box">
+     <embed src="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/Role of ADAM17 as a regulatory.pdf" width="1100" height="400" />
+</div> <br> <br>
+	
+ JA19: <b>Mishra HK</b>, Sharma SK, Sreenivas V. Angiotensin-converting enzyme gene polymorphism in north Indian population with 
+obstructive sleep apnea. Sleep Breath. Sleep Breath. 2013 Sep;17(3):1029-37. </br>
+	<a href="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/Abstract/Angiotensin-converting Enzyme Gene Polymorphism.pdf">
+	<b>[<i>Abstract</i>]</b></a>
+  <div class="box">
+  <embed src="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/Abstract/Angiotensin-converting Enzyme Gene Polymorphism.pdf" width="1100" height="400" />
+  </div> 
+	<a href="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/ Angiotensin-converting enzyme gene polymorphism in north Indian population with obstructive sleep apnea.pdf">
+		<b>[<i>Full Text</i>].</b></a>
+  <div class="box">
+     <embed src="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/ Angiotensin-converting enzyme gene polymorphism in north Indian population with obstructive sleep apnea.pdf" width="1100" height="400" />
+  </div> <br><br>
+			
+ JA18:	Sharma SK, <b>Mishra HK</b> Genetic polymorphisms of N-acetyltransferase 2 & susceptibility to antituberculosis drug-induced 
+  hepatotoxicity. Indian J Med Res. 2016 Dec;144(6):924-928. <br>
+	 <a href="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/Abstract/N-acetyltransferase 2.pdf">
+	<b>[<i>Abstract</i>]</b></a>
+  <div class="box">
+  <embed src="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/Abstract/N-acetyltransferase 2.pdf" width="1100" height="400" />
+  </div> 
+	<a href="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/Genetic polymorphisms of N-acetyltransferase 2.pdf">
+		<b>[<i>Full Text</i>]</b></a>
+  <div class="box">
+     <embed src="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/Genetic polymorphisms of N-acetyltransferase 2.pdf" width="1100" height="400" />
+</div> <br> <br>
+
+JA17:	Theron G, Pinto L, Peter J, <b>Mishra HK</b>, Mishra HK, van Zyl-Smit R, The Use of an Automated Quantitative Polymerase Chain Reaction (Xpert MTB/RIF) to Predict the Sputum Smear Status of Tuberculosis 
+  Patients. Clin Infect Dis. 2012 Feb 1; 54(3): 384–388. <br>
+	 <a href="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/Abstract/xpert.pdf">
+	<b>[<i>Abstract</i>]</b></a>
+  <div class="box">
+  <embed src="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/Abstract/xpert.pdf" width="1100" height="400" />
+  </div> 
+	<a href="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/The use of an automated quantitative.pdf">
+		<b>[<i>Full Text</i>]</b></a>
+  <div class="box">
+     <embed src="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/The use of an automated quantitative.pdf" width="1100" height="400" />
+</div> 
+
+	<a href="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/Abstract/An eXpert.pdf">
+		<b>[<i>Editorial Coverage</i>]</b></a>
+  <div class="box">
+     <embed src="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/Abstract/An eXpert.pdf" width="1100" height="400" />
+</div>
+<br> <br>
+
+JA16:	Sharma SK, <b>Mishra HK</b>, Sharma H, Goel A, Sreenivas V, Gulati  V,  Tahir  M. Obesity, and not  obstructive sleep apnea, 
+  is responsible for increased serum hs-CRP levels in patients with sleep-disordered breathing in Delhi. Sleep Med. 2008 ;9:149-56.<br>
+	 <a href="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/Abstract/Obesity, and Not Obstructive Sleep Apnea.pdf">
+	<b>[<i>Abstract</i>]</b></a>
+  <div class="box">
+  <embed src="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/Abstract/Obesity, and Not Obstructive Sleep Apnea.pdf" width="1100" height="400" />
+  </div> 
+	<a href="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/ Obesity, and not obstructive sleep apnea, is responsible for increased serum hs-CRP levels in patients with sleep-disordered breathing in Delhi.pdf">
+		<b>[<i>Full Text</i>]</b></a>
+  <div class="box">
+     <embed src="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/ Obesity, and not obstructive sleep apnea, is responsible for increased serum hs-CRP levels in patients with sleep-disordered breathing in Delhi.pdf" width="1100" height="400" />
+</div> <br> <br>
+
+
+JA15: Sharma SK, Agrawal S, Damodaran D, <b> Mishra HK</b>, Ramakrishnan Lakshmy, Srinivas Vishnubhatla, Atin Kumar, Priya Jagia. 
+Effect Of Continuous Positive Airway Pressure On Metabolic Syndrome And Cardiovascular Markers In Patients With Obstructive Sleep Apnea In A North Indian Population. Am J Respir Crit Care Med 183;2011:A1059<br>
+	 <a href="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0//Abstract/CPAP.pdf">
+	<b>[<i>Abstract</i>]</b></a>
+  <div class="box">
+  <embed src="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0//Abstract/CPAP.pdf" width="1100" height="400" />
+  </div> 
+	<a href="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0//AJRCCM.pdf">
+		<b>[<i>Full Text</i>]</b></a>
+  <div class="box">
+     <embed src="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0//AJRCCM.pdf" width="1100" height="400" />
+</div> <br> <br>
+
+
+
+JA14:	Reddy EV, Kadhiravan T, <b>Mishra HK</b>, Sreenivas V, Handa KK, Sinha S, Sharma SK. Prevalence and risk factors of 
+  obstructive sleep apnea among middle-aged urban Indians: a community-based study. Sleep Med. 2010;11:562-8.<br>
+	 <a href="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0//Abstract/Prevalence and Risk Factors OSA.pdf">
+	<b>[<i>Abstract</i>]</b></a>
+  <div class="box">
+  <embed src="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0//Abstract/Prevalence and Risk Factors OSA.pdf" width="1100" height="400" />
+  </div> 
+	<a href="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0// Prevalence and risk factors of obstructive sleep apnea among middle-aged urban Indians- a community-based study.pdf">
+		<b>[<i>Full Text</i>]</b></a>
+  <div class="box">
+     <embed src="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0// Prevalence and risk factors of obstructive sleep apnea among middle-aged urban Indians- a community-based study.pdf" width="1100" height="400" />
+</div> <br> <br>
+
+ JA13:	Sharma, S. K.; Jha, B. K.; Sharma, A.; Sreenivas, V.; Upadhyay, V.; Jaisinghani, C.; Singla, R.; <b>Mishra HK</b>; Soneja, 
+  M. Genetic polymorphisms of CYP2E1 and GSTM1 loci and susceptibility to anti-tuberculosis drug- induced hepatotoxicity. Int J Tuberc Lung Dis. 2014 May;18(5):588-93.<br>
+	 <a href="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0//Abstract/CYP2E1.pdf">
+	<b>[<i>Abstract</i>]</b></a>
+  <div class="box">
+  <embed src="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0//Abstract/CYP2E1.pdf" width="1100" height="400" />
+  </div> 
+	<a href="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/Genetic polymorphisms of CYP2E1 and GSTM1 loci and susceptibility to anti-tuberculosis drug-induced hepatotoxicity.pdf">
+		<b>[<i>Full Text</i>]</b></a>
+  <div class="box">
+     <embed src="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/Genetic polymorphisms of CYP2E1 and GSTM1 loci and susceptibility to anti-tuberculosis drug-induced hepatotoxicity.pdf" width="1100" height="400" />
+</div> <br> <br>
+
+JA12:	Agrawal S, Sharma SK, Sreenivas V, Lakshmy R, <b>Mishra HK</b>. Stepped approach for prediction of syndrome Z in patients 
+  attending sleep clinic: a north Indian hospital-based study. Sleep Breath. 2012 Sep;16(3):6217.<br>
+	 <a href="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/Abstract/Stepped Approach for Prediction.pdf">
+	<b>[<i>Abstract</i>]</b></a>
+  <div class="box">
+  <embed src="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/Abstract/Stepped Approach for Prediction.pdf" width="1100" height="400" />
+  </div> 
+	<a href="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/Stepped approach for prediction of syndrome Z in patients attending sleep clinic- a north Indian hospital-based study.pdf">
+		<b>[<i>Full Text</i>]</b></a>
+  <div class="box">
+     <embed src="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/Stepped approach for prediction of syndrome Z in patients attending sleep clinic- a north Indian hospital-based study.pdf" width="1100" height="400" />
+</div> <br> <br>
+
+JA11:	Sharma SK, Sinha S, Jagannathan NR,  Danishad  KA,  <b>Mishra HK</b>,  Sharma  H. Proton Magnetic resonance spectroscopy of 
+  brain in patients with obstructive sleep apnea: a study in northern Indian Asian subjects. Indian J Med Res 2010 ;132:278-86.<br>
+	 <a href="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/Abstract/Proton Magnetic Resonance.pdf">
+	<b>[<i>Abstract</i>]</b></a>
+  <div class="box">
+  <embed src="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/Abstract/Proton Magnetic Resonance.pdf" width="1100" height="400" />
+  </div> 
+	<a href="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/ Proton magnetic resonance spectroscopy of brain in obstructive sleep apnoea in north Indian Asian subjects.pdf">
+		<b>[<i>Full Text</i>]</b></a>
+  <div class="box">
+     <embed src="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/ Proton magnetic resonance spectroscopy of brain in obstructive sleep apnoea in north Indian Asian subjects.pdf" width="1100" height="400" />
+</div> <br> <br>
+
+ JA10:	Sharma   SK,  George   N,   Kadhiravan   T,   Saha   PK, <b>Mishra HK</b>, Hanif M. Prevalence of extensively drug-resistant
+  tuberculosis among patients with multidrug- resistant tuberculosis: a retrospective hospital-based study. Indian J Med Res. 2009; 130:392-5.<br>
+	 <a href="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/Abstract/Prevalence of MDR.pdf">
+	<b>[<i>Abstract</i>]</b></a>
+  <div class="box">
+  <embed src="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/Abstract/Prevalence of MDR.pdf" width="1100" height="400" />
+  </div> 
+	<a href="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/ Prevalence of extensively drug-resistant tuberculosis among patients with multidrug-resistant tuberculosis- a retrospective hospital-based study.pdf">
+		<b>[<i>Full Text</i>]</b></a>
+  <div class="box">
+     <embed src="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/ Prevalence of extensively drug-resistant tuberculosis among patients with multidrug-resistant tuberculosis- a retrospective hospital-based study.pdf" width="1100" height="400" />
+ </div> 
+	<a href="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/Abstract/Extensivel.pdf">
+		<b>[<i>Editorial Coverage</i>]</b></a>
+  <div class="box">
+     <embed src="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/Abstract/Extensivel.pdf" width="1100" height="400" />
+</div><br> <br>
+
+JA09:	Sharma SK, Reddy EV, Sharma A, Kadhiravan T, <b>Mishra HK</b>, Sreenivas V, Mishra HK, Lakshmy R. Prevalence and risk factors
+  of syndrome-Z in urban Indians. Sleep Med. 2009; 10:913-8.<br>
+	 <a href="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/Abstract/Prevalence and Risk Factors.pdf">
+	<b>[<i>Abstract</i>]</b></a>
+  <div class="box">
+  <embed src="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/Abstract/Prevalence and Risk Factors.pdf" width="1100" height="400" />
+  </div> 
+	<a href="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/ Prevalence and risk factors of syndrome Z in urban Indians.pdf">
+		<b>[<i>Full Text</i>]</b></a>
+  <div class="box">
+     <embed src="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/ Prevalence and risk factors of syndrome Z in urban Indians.pdf " width="1100" height="400" />
+</div> <br> <br>
+
+JA08:	Tahir   M,   Sharma   SK,    Ashraf   S, <b>Mishra HK</b>. Angiotensin converting enzyme genotype affects development and 
+  course of sarcoidosis in Asian Indians. Sarcoidosis Vasc Diffuse Lung Dis. 2007; 24:106- 12. <br>
+	 <a href="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/Abstract/ACE Sarcoidoisis.pdf">
+	<b>[<i>Abstract</i>]</b></a>
+  <div class="box">
+  <embed src="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/Abstract/ACE Sarcoidoisis.pdf" width="1100" height="400" />
+  </div> 
+	<a href="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/ACE Sarcodoisis.pdf">
+		<b>[<i>Full Text</i>]</b></a>
+  <div class="box">
+     <embed src="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/ACE Sarcodoisis.pdf " width="1100" height="400" />
+</div> <br> <br>
+
+ JA07:	Sharma SK,  Tahir   M,  Mohan  A,  Smith-Rohrberg  D, <b>Mishra HK</b>, Pandey RM. Diagnostic accuracy of ascitic fluid 
+  IFN-𝛾 and adenosine deaminase assays in the diagnosis of tuberculous ascites. J Interferon Cytokine Res. 2006; 26:484-8.<br>
+	 <a href="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/Abstract/IFN.pdf">
+	<b>[<i>Abstract</i>]</b></a>
+  <div class="box">
+  <embed src="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/Abstract/IFN.pdf" width="1100" height="400" />
+  </div> 
+	<a href="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/ Diagnostic accuracy of ascitic fluid IFN-gamma and adenosine deaminase assays in the diagnosis of tuberculous ascites.pdf">
+		<b>[<i>Full Text</i>]</b></a>
+  <div class="box">
+     <embed src="https://github.com/mishraspring/mishraspring.github.io/blob/af1dd7e3e69c949beaf56d5dad2096c8f7994ae0/ Diagnostic accuracy of ascitic fluid IFN-gamma and adenosine deaminase assays in the diagnosis of tuberculous ascites.pdf " width="1100" height="400" />
+</div> <br>
+	<div id="content-professionalheader">Articles under communication (Refereed/Scholarly Journal Articles) or Under Preparation</div> </br>
+JA06:	 <b> Mishra HK </b> Current advances in adoptive cell-based cancer immunotherapies and effectiveness of combinatorial approaches (under peer review).<br> <br>
+JA05:	<b> Mishra HK </b> et. al. Efficacy of convalescent plasma therapy for COVID19: A systematic review and meta-analysis (under peer review).<br><br>
+		
+JA04:	 <b> Mishra HK </b> et. al. Corticosteroid therapy for COVID-19: a systematic review and meta-analysis of randomized controlled trials (under peer review).
+	
+<p>JA03:	Bilal N, Qiuyin Ren, Paranandi K, <b> Mishra HK </b> et al Nanoparticle Approahces to Vaccine Development - A Focus on Toll-Like Receptors (TLRs): A Systematic Scoping Review (under peer review in Frontiers of Immunology). </p>
+<p>JA02:	Pederson JM, <b> Mishra HK </b>, Kallmes K et al Efficacy and safety of hydroxychloroquine or chloroquine with or without
+macrolides for the treatment of COVID-19: A systematic review and meta-analysis (under peer review). </p> 
+
+<p>JA01:	Cousillas, G, <b>Mishra HK</b>, Walcheck B, Brian C. ADAM17 protein expression and function in bovine polymorphonuclear leukocytes (under peer review)</p>
+<p> <a href="https://scholar.google.com/citations?hl=en&user=i8IMf6wAAAAJ"><b>[<i>Google Scholar Citations</i>]</b> </a> <p>
+	  
+
+</div>
+		
+
+</div>
+</div>
+
+</td>
+<td><div id="divMiscPanel" style="display:none;"> 
+	<div id="content-professional" style="border:solid; border-width:1px; border-color:grey;"> 
+		<div id="content-professionalheader">Research Grants </div>
+		<p> G16:	Study to elucidate the mechanisms of inhibiting COVID-19 (SARS-CoV-2) viral entry into the lung epithelial cells. Rapid Response Grant, Role: Principal Investigator </p>
+<p> G15:	OAK Foundation Mentorship Award for sustaining the reserach momentum and mentoring the next generation of researchers in the area of Host-Pathogen Interacactions and Cancer Immunotherapies. Role: Principal Investigator</p>
+<p> G14:	Regulation for the SARS-CoV-2 receptor ACE2 by ADAM17. Role: Co-Principal Investigator</p>
+<p> G13:	Mechanism of in-vivo proliferation and expansion of natural killer cells and its utlity in the treatment of ovarian cancer.
+	  Minnesota Ovarian Cancer Alliance (Under Review). Role: Principal Investigator</p>
+<p> G12:	K22 NCI Award (submitted) entitled, “Cancer Immunotherapy approaches using a combination of 
+  engineered NK and T cells with BiKEs/TriKEs”. Role: Principal Investigator </p>
+<p> G11: M.D. Lederman Consulting Ltd, The effect of the Natural Matrix Bio Polymer Membrane (NMBM) on leg ulcer Co-Investigator </p>
+<p> G10:	NIH RO1: Blocking NK cell shedding of CD16a to increase cancer cell killing
+The goal of this project is to block CD16a shedding in NK cells enhance their in vivo killing of ovarian cancer cells.
+  Role: As a Senior Key Personnel facilitated the conception of the grant by generating key data and helped in drafting it. </p>
+<p> G09:	NIH RO1: Improving vascular function and bacterial clearance during infection. The goal of this project   is to 
+  determine the effects of blocking ADAM17 in leukocytes and endothelial cells on sepsis pathogenesis. 
+  Role: Senior Key Personnel (generated key data and facilitated in editing this grant) </p>
+<p> G08:	A Study of correlation between genotypic & Phenotypic expression of NAT-2, CYP2E1 and GSTM 1 genes in patients 
+  with antituberculosis drug induced hepatotoxicity. Sponsored by Council of Scientific and Industrial Research, University
+  Grant Commission, Council of Scientific and Industrial Research, Pusa, New Delhi, India.2005-2009. 
+  Role: Principal  Investigator </p>
+<p> G07:	Indian Council of Medical Research grant on Association of OSA with Metabolic Syndrome, Insulin Resistance and 
+  TNF-alpha, IL-6 and ACE polymorphism – A Case Control Study., New Delhi, India. 2008- 2010. Role: Co-investigator </p>
+<p> G06:	Institutional Federal Grant from Department of Biotechnology, India for the acquisition of FACS Aria-II sorter. 
+  Role: Co-investigator </p>
+<p> G05:	Institutional Federal Grant from Department of Biotechnology, India for the acquisition of Bio-Rad 5-plex qPCR machine
+  Role: Co-investigator </p> 
+<p> G04:	Institutional Federal Grant from Department of Biotechnology, India for the acquisition of Sequencer, LabIndia: 
+  Role: Co-investigator </p>
+<p> G03:	Institutional Federal Grant from Department of Biotechnology, India for the acquisition of a 2-D gel electrophoresis
+  system (Biorad). Role: Co-investigator </p>
+<p> G02:	Institutional Federal Grant from Department of Biotechnology, India for the formation of a BSL-3 laboratory 
+  Role: Co-investigator </p>
+<p> G01:	FIND grant Drug Resistant Tuberculosis Diagnostic Laboratory and Intermediate reference laboratory 
+  Role: Co-investigator 2007-2010 </p>
+
+<div id="content-professionalheader">Honors and Awards </div>
+<p>A21:	Travel Award Society of Leukocyte Biology Annual Meeting, Boston, MA, October, 2019.</p>
+<p>A20:	Travel Award Joint meeting of the SLB and IEIIS, Chandler, AZ, October, 2018.</p>
+<p>A19:	Travel Award for the 48th Annual Meeting of Society of Leukocyte Biology (Immunity in Health and Diseases) in North Carolina, Raleigh, September 2015.</p>
+<p>A18:	Travel Award, American College of Chest Physician Annual Meeting, 2011. </p>
+<p>A17:	Selected Talk in Society of Leukocyte Biology annual meeting, Boston, MA, October, 2019.</p>
+<p>A16:	Selected Talk in Society of Leukocyte Biology annual meeting, Chandler, AZ, October, 2018.</p>
+<p>A15:	Selected Talk, Gene susceptibility for Obstructive Sleep Apnea, Annual Conference of the Association of Physicians of India (APICON), New Delhi, India 2009.</p>
+<p>A14:	Research Fellowship Award, Council of Scientific and Industrial Research: Government of India, New Delhi, India 2004.</p>
+<p>A13:	Research Day Award, Veterinary and Biomedical Sciences, University of Minnesota, 2015.</p>
+<p>A12:	Points of pride research day award; First place in poster competition, Veterinary and Biomedical Sciences, University of Minnesota, October 2013.</p>
+<p>A11:	Pioneer in Biotechnology Award, Jamia Millia Islamia, New Delhi, India 2003.</p> 
+<p>A10:	License for lectureship University Grant Commission, Government of India, New Delhi, 2003.</p>
+<p>A09:	Honorable mention to the poster in research day, Veterinary and Biomedical Sciences, University of Minnesota, October 2014.</p>
+<p>A08:	Travel Award for attending Regulated Proteolysis of Cell Surface Protein, Gordon Research Conference, Ventura, California, April 2014.</p>
+<p>A07:	Gordon Research Conference Poster Award; Flash talk award for the poster presentation, Ventura, California, April 2014.</p>
+<p>A06:	Career Development Award for attending conference, Council of Scientific and Industrial Research, 2011.</p>
+<p>A05:	Career Development Award at the University of Minnesota, September 2015.</p>
+<p>A04:	Best Oral Presentation, Cancer Immunotherapy and Cell signaling; Implication of imatinib in combination with immunotherapy, Jamia Millia Islamia University, New Delhi, India, 2002.</p>
+<p>A03:	Best Dissertation Award Cloning and expression of HIC1 (Human in cancer-1 gene), a putative tumor suppressor gene, Jamia Millia Islamia, New Delhi, India, 2002.</p>
+<p>A02:	Beckton Dickinson Travel Award, 2010 11thIndo-US Cytometry Workshop held in C-CAMP in, Bangalore, India, September 2010.</p>
+<p>A01:	Awtar Krishan Award for exceptional flow cytometer-based expertise in the 11th Indo-US Cytometry Workshop held in C-CAMP, Bangalore, India, September, 2010.</p>
+
+<div id="content-professionalheader">Abstracts in Conference and Procedings</div>
+
+<p>AB15:	Mishra HK, Wu J, Kaufman DS, Walcheck B Enhancing tumor killing abilities of NK cells by targeting CD16 shedding and ADAM17 Proceedings: AACR Annual Meeting 2017; April 1-5, 2017; Washington, DC 
+<p>AB14:	Mishra HK, Walcheck B Use of ADAM17 mAb to enhance human NK cell activation by CD16A and their release The 17th Meeting of the Society for Natural Immunity. October 2018 Chandler, AZ
+<p>AB13:	Mishra HK, Jing Ma, Daniel Mendez, Robert Hullsiek, Bruce Walcheck Targeting ADAM17 with a mAb as a Potential Therapeutic Intervention in Sepsis 2018 Joint Meeting of the Society for Leukocyte Biology and the International Endotoxin and Innate Immunity Society. Journal of Leukocyte Biology_Abstract_86
+<p>AB12:	Mishra HK, Walcheck B. Role of Leukocyte ADAM17 in Sepsis Pathogenesis 48th annual meeting of the Society for Leukocyte Biology North Carolina, Raleigh, 2015
+<p>AB11:	Mishra HK, Walcheck B Use of an ADAM17 mAb as a Checkpoint Inhibitor to Enhance Human NK Cell Anti-tumor Effector Functions 2018 Joint Meeting of the Society for Leukocyte Biology and the International Endotoxin and Innate Immunity Society
+<p>AB10:	Mishra HK, Walcheck B Effect of ADAM17 inhibition on the release of IFN-y during natural killer cell mediated antibody dependent cellular cytotoxicity in cancer. Tumor Immunology and Immunotherapy conference 2017_Abstract B57
+<p>AB09:	Mishra HK et. al. Regulation CXCR2 expression and neutrophil recruitment by ADAM17. Gordon Research Conference (California Ventura, April 2014). Winner of Flash Talk Award.
+<p>AB08:	Mishra HK et. al. Therapeutic benefits of targeting CD16 shedding. Gordon Research Conference (California Ventura, April 2014).
+<p>AB07:	Mete T; Mishra HK; Connor U; Mielke A; Walcheck, Bruce A Novel Mechanism that Regulates the Surface Levels of NKp46 on Natural Killer Cells. Point of Pride Research Day Abstract Book, October, 2016
+<p>AB06:	Cousillas, Georgina, Mishra HK, Walcheck B, Brian Effects of milk yield genotype on immune, endocrine and metabolite interactions in dairy cows  Conservancy.umn.edu
+<p>AB05:	Mishra HK, Sharm SK, Sreenivas V Angiotensin-Converting Enzyme Gene Polymorphism in North Indian Population with Obstructive Sleep Apnea Chest 140 (4), 968A
+<p>AB04:	Kristin M. S., Robert H, Mishra HK, Mendez D, Li Y, Rogich A, Wu J and Walcheck B. Enhancing the function of CD16A in natural killer cells to improve tumor cell killing, 2019 Scientific Meeting of Medical Fellows at the AAP/ASCI/APSA Joint Meeting April 5-7, Chicago IL.
+<p>AB03:	Rogich A, Walcheck B, Mendez D, Mishra HK, Wu J, Snyder K, Hullsiek R Evaluation of cytokine production of human natural killer cells expressing engineered Fc receptor 2018 ACVP/ASVCP Proceedings 2018.
+<p>AB02:	Sharma SK, Mohan A, Mishra HK et al. Role of Tobacco Cessation as an adjunct to anti-tuberculosis treatment in pulmonary tuberculosis: An Open-Label, Randomized, Controlled Clinical Trial American Journal of Respiratory and Critical Care Medicine; N Vol. 193, (2016): 1.
+<p>AB01:	Sharma SK, Agarwal S, Damodaran D, Mishra HK. Effect Of Continuous Positive Airway Pressure On Metabolic Syndrome And Cardiovascular Markers In Patients With Obstructive Sleep Apnea In A North Indian Population Am J Respir Crit Care Med 183;2011:A1059
+
+	<div id="content-professionalheader">Invited Presentations, Seminar and Talks</div>
+<p>IP14:	Receptor Biology and its applications in host pathogen interactions and cancer immunotherapies, Department of Surgery, University of Minnesota, December 2019.</p>
+<p>IP13:	ADAM17 Inhibition Enhances Human NK cell Proliferation by IL-15 in a murine xenograft model, Selected Talk, Annual Meeting of Society of Leukocyte Biology, Boston, MA, Nov 2019.</p>
+<p>IP12:	iPSC derived engineered NK and T cells in combination with TriKE A Novel Cancer Immunotherapy Approach August 8, 2019. </p>
+<p>IP11:	Engineered Induce pluripotent Stem Cell and their utility with various combinatorial therapies in cancer immunology August 23, 2019. </p>
+<p>IP10:	ADAM17 as a potential checkpoint for enhanced tumor killing by NK cells at Department of Experimental and Clinical Pharmacology as an Invited Speaker in September, 2018. </p>
+<p>IP09:	Targeting ADAM17 with a monoclonal antibody as a potential therapeutic intervention in sepsis. Selected Talk at Annual meeting of Society of Leukocyte Biology, Arizona, Chandler, 2018. </p> 
+<p>IP08:	Enhancing tumor killing abilities of NK cells by targeting CD16 shedding and ADAM17 NK MIG meeting at University of Minnesota, December 2017. </p>
+<p>IP07:	Regulated proteolysis of cell surface proteins. Sheddase and intramembrane-cleaving proteases Flash Talk Presentation in Gordon Research Conference, Ventura Californi, 2013. </p> 
+<p>IP06:	Regulation of CXCR2 expression and neutrophil recruitment by ADAM17 College of Veterinary Sciences, November 6, 2013.</p> 
+<p>IP05:	CVM research seminar: Underlying Mechanisms of Immunosuppression During Sepsis, 2015. </p> 
+<p>IP04:	Obesity, Obstructive Sleep Apnea and Cardiovascular Disorders. Jamia Millia Islamia 2011.</p> 
+<p>IP03:	Inflammation Group Meeting, “Regulation of CXCR2 by ADAM17 and its role in neutrophil recruitment” 2012. </p> 
+<p>IP02:	Anti-tuberculosis drug induced hepatotoxicity. Are we heading toward solutions? All India Institute of Medical Sciences, Department of Medicine 2006. </p> 
+<p>IP01:	The genetic predisposition of hypoxia sensitive proteins in Patients with Obstructive sleep apnea, 2007 All India Institute of Medical Sciences, Department of Medicine.2008. </p> 
+
+<div id="content-professionalheader">Teaching and Capacity Building:</div>
+<p>T18:	Fundamental of Research Methodologies, Study Design and Biostatistics 2019. </p>
+<p>T17:	CMB8202 Adaptive Immunity/Cancer Immunology 2019. </p>
+<p>T16:	CMB8202 Adaptive Immunity/Cancer Immunotherapy course was taught to graduate students at University of Minnesota in 2018. </p>
+<p>T15:	CMB8202 Cellular Communication course was taught to graduate students at University of Minnesota in 2017. </p>
+<p>T14:	Fundamental of Research Methodologies, Study Design and Biostatistics 2017. </p>
+<p>T13:	Developed an elective course on the basics of immunology with hands on training on flow cytometry for the DVM students of University of Minnesota (the course approval is under process). </p>
+<p>T12:	Co-director Protein Core Laboratory, Veterinary and Biomedical Sciences, University of Minnesota. </p>
+<p>T11:	Flow cytometry instructor and trainer.</p>
+<p>T10:	Represented researchers in faculty committee meetings of College of Veterinary Medicine 2012-2017. </p>
+<p>T09:	Member of Campus Planning and Advisory Committee, St. Paul, University of Minnesota, 2018. </p>
+<p>T08:	Served as a member of faculty selection committee at College of Veterinary Medicine in 2017. </p>
+<p>T07:	Serve as a member of faculty committee meeting for Capacity building, Strategy and Planning 2013-2016. </p>
+<p>T06:	MTTG (The Members in Transition and Training Group), Society of Leukocyte biology, Society of Leukocyte Biology, Conference organization. 2014-2018. </p>
+<p>T05:	Grant Writing Expert, Senior Editor and Bio-statistician at Superior Medical Editing (SME). </p>
+<p>T04:	Training and Teaching writers and editors of Superior Medical Experts the basics of statistics and manuscript and grant writing. </p>
+<p>T03:	Established Line Probe Assay laboratory for the early diagnosis of drug resistant tuberculosis at Department of Medicine, AIIMS. </p>
+<p>T02:	Establishment, Maintenance and Operational Responsibility of Biosafety Level III laboratory at Department of Medicine, AIIMS.</p>
+<p>T01:	Co-director of Molecular and Immunology Laboratory, Department of Medicine, AIIMS. </p>
+
+
+	<div id="content-professionalheader">Academic Advising and Mentoring </div>
+<p>M14: Andrew Wang (High School Student from Wayzata School District) Researching on the Pathophysiology of SARS-CoV-2 infection</p>
+<p>M13:	Dr. Georgina Cousillas (Graduate student) Role of ADAM17 in the Bovine infection, Vet and Biomedical Sciences, University of Minnesota. 2018. </p>
+<p>M12:	Gwen Phung (Undergrad). Cell signaling of CD16 on NK cells and its role in their tumor killing abilities, Vet and Biomedical Sciences, University of Minnesota 2018.</p>
+<p>M11:	Daniel Mendez (Master Student): Role of ADAM17 in NK cell receptor function. Tissue culture and animal breeding technique. Vet and Biomedical Sciences, University of Minnesota (current student).</p></p></p>
+<p>M10:	Adam Milke (Graduate Student): Engineering ADAM17 KO and cleavage resistant CD16 in iPSC derived NK cell population Vet and Biomedical Sciences, University of Minnesota (2016-2017).</p></p>
+<p>M09:	Kevin Larpenteur (Undergrad): Tissue culture technique, handling iPSCs, PCR and immunophenotyping, Vet and Biomedical Sciences, University of Minnesota (2016).</p>
+<p>M08:	Jessica Chien (Undergrad): Elucidation of mechanism behind regulation of CXCR2 by ADAM17 activation, Vet and Biomedical Sciences, University of Minnesota (2016).</p>
+<p>M07:	Tuncay, Mete: A Novel Mechanism that Regulates the Surface Levels of NKp46 on Natural Killer Cells (2017) </p>
+<p>M06:	Dale Morrow (Undergrad): Tissue culture technique and immunophenotyping Vet and Biomedical Sciences, University of Minnesota (2015)</p>
+<p>M05:	Sugandha Rajput (Undergrad): Small animal breeding, phenotyping and genotyping of sickle cell anemia mice, qPCR techniques. Department of Medicine, Hematology Oncology and Transplantation division, University of Minnesota. (2013)</p>
+<p>M04:	Abdiasis Hussein (Undergrad): Molecular biology and protein analysis of mu opioid receptors, hypoxia induced sickle crisis in murine model of sickle cell anemia. Department of Medicine, Hematology Oncology and Transplantation division, University of Minnesota, 2012. </p>
+<p>M03:	Dr. Bhagteshwar Singh (Visiting student): Enrollment of HIV tuberculosis patients for studying the efficacy of safety of thrice weekly DOTS in tuberculosis patients with and without HI co-infection. Good laboratory practices, handling infectious samples in BSL-3 laboratory. All India Institute of Medical Sciences, New Delhi, India (2009).</p>
+<p>M02:	Dr. Rajnarayan Yadav (Graduate Student): Establishment of tuberculosis diagnosis laboratory for solid culture method and drug resistant. All India Institute of Medical Sciences, New Delhi, India (2008).</p>
+<p>M01:	Dr. Binit Kumar Singh (Graduate Student): MTBDRplus line probe assay for drug resistant tuberculosis diagnosis. All India Institute of Medical Sciences, New Delhi, India. 2008.</p>
+
+<div id="content-professionalheader">Clinical Trials Co-ordination </div>
+<p>CT05: Effect of continuous positive airway pressure (CPAP) on cardiovascular biomarkers in patients of obstructive sleep apnea, Department of Medicine, All India Institute of Medical Sciences 2008-2010. </p>
+<p>CT04: Efficacy and safety of adjuvant treatment with Mycobacterium w vaccine in tuberculosis: A double blind, randomized, placebo-controlled, multicentric clinical trial. Department of Medicine, All India Institute of Medical Sciences 2004-2007. </p>
+<p>CT03: Impact of a package of intensive smoking-cessation interventions versus recommended basic smoking- cessation advice on outcomes in smear-positive patients with pulmonary tuberculosis; a randomized controlled trial, TB-SUSGENT (Sustaining Research Momentum Over the Coming Decades: Mentoring  the Next Generation of Researchers for Tuberculosis, 2009-2011. </p>
+<p>CT02: Efficacy of Thrice Weekly Intermittent Short-Course Anti-tuberculosis Chemotherapy in Tuberculosis Patients with and Without HIV Infection, Department of Medicine, All India Institute of Medical Sciences 2006-2010. </p>
+<p>CT01: Tuberculosis-associated immune reconstitution inflammatory syndrome in North Indian population of HIV/AIDS patients receiving HAART, Department of Medicine, All India Institute of Medical Sciences 2009-2011. </p>
+
+<div id="content-professionalheader">Service and Public Outreach:</div>
+<h3>Service to The Discipline/Profession/Interdisciplinary Area(s)</h3>
+<h3>Service to the Department and University</h3>
+<p>SDU6:Coronavirus research collaborative, University of Minnesota, 2020</p>
+<p>SDU5:Capacity grant reviewer, Veterinary and Biomedical Sciences, University of Minnesota, 2020</p>
+<p>SDU4:Member of Faculty Selection Committee, Vet and Biomedical Sciences, University of Minnesota, 2018 </p>
+<p>SDU3:Capacity grant reviewer, Veterinary and Biomedical Sciences, University of Minnesota, 2018</p>
+<p>SDU2:Founder and co-ordinator of SUPER-G (Saint Paul UMN Post-Doc Research in Excellent Group) 2014-2018 </p>
+<p>SDU1:Research Committee Member, College of Veterinary Sciences, University of Minnesota, 2013-2018 </p>
+
+<h3>Editorships/Journal Reviewer Experience</h3>
+<p>E07:	Editor, Journal of HIV and AIDS research (JAHR) 2015-present</p>
+<p>E06:	Editorial Board Member of Journal of Clinical Immunology and Immunopathology Research (JCIIR) 2015-present</p>
+<p>E05:	Reviewer of Experimental Lung Research 2018-present</p>
+<p>E04:	Reviewer Journal of Leukocyte Biology 2018-present</p>
+<p>E03:	Reviewer Human Immunology 2018-present</p>
+<p>E02:	Reviewer Journal of Medical Virology 2019-Present</p>
+<p>E01:	Reviewer Research Square, an open peer review platform 2015-Present</p>
+
+<div id="content-professionalheader">Membership</div>
+<p>American Association of Cancer Research (AACR) 2017-present</p>
+<p>Society of Leukocyte Biology (SLB) 2015-present</p>
+<p>American Association for the Advancement of Science (AAACR)</p>
+<p>The Cytometry Society of India, 2010-present</p>
+<p>Minnesota Academy of Science 2015-present</p>
+<p>National Postdoctoral Association 2014-2016</p>
+
+<div id="content-professionalheader">Session Chair at Scientific Events</div>
+<p>C03:	Session Chair Society of Leukocyte Biology Annual Meeting, Boston 2019. <p>
+<p>C02:	Session chair at join Meeting of the Society of Leukocyte Biology and The International Endotoxin and Innate Immunity Society Chandler, AZ, 2018.<p>
+<p>C01:	Session Chair at the 48th Annual Meeting of Society of Leukocyte Biology (Immunity in Health and Diseases) schedule to be held in Raleigh, North Carolina from September 27 to 29.<p>
+
+<div id="content-professionalheader">Public Outreach</div>
+<p>P05:	Members in Transition and Training Group (MTTG) Society of Leukocyte Biology: MTTG is subsidiary association within Society of Leukocyte Biology (SLB) which is dedicated for Junior faculty and senior scientist to conduct various scientific sessions like flash talk, poster presentation etc along with facilitating networking opportunity while conducting specialized satellite workshops during the Annual Meeting of SLB: 2015-2019</p>
+<p>P04:	Teaching and training scientific experiment designing and writing skills to young editors as a Director of Research and Editing at Superior Medical Experts 2016-present</p>
+<p>P03: Participated as a Judge, Instructor or teacher in several events of Minnesota Academy of Science </p>
+<p>P02:	Founder of VetMedGo: VetMedGo is a platform to provide evidence-based resources to veterinarian doctors to manage their patients. The platform is under development and will be launched in near future. Some of the features will include the access of thousands of pictures and other form of illustrations along with keyword symptoms-based diagnosis and treatment algorithms with machine learning and AI based outputs. This software will be compatible to download on phone and the machine learning and AI components will allow to draw a gaussian based pattern recognition features specific to the need of inquirer.</p>
+<p>P01:	Founder of American Research and Communications (ARC), LLC: ARC is a grass root organization for fostering novel and innovative ideas in the area of Immunotherapy, Regenerative Medicine, diagnostics and various other STEM related inventions. In addition to that, ARC also provide a platform for the students to hone their skillset by various bootcamp courses in molecular biology, immunology, programming, study design, statistical analysis and machine learning etc. specially to minority and disadvantaged students who want to pursue their career in STEM.</p>
+
+<div id="content-professionalheader">Book Chapters and Other Scholarly Articles</div> </br>
+
+BC03: <b>Mishra HK </b> <i> et al. Top 5 Contributions in Microbiology: 2nd Edition.</i>  Ectodomain Shedding by ADAM17. </br>
+<a href="mishrahemant.github.io/Abstract/sepsis review.pdf">
+		<b>[<i>Full Text</i>]</b></a> 
+ <div class="box">
+  <embed src="mishrahemant.github.io/Abstract/sepsis review.pdf" width="1100" height="400" />
+  </div> </br> </br>
+BC02: Shahid M,  Mishra  H,  <b>Mishra HK</b>,  Tripathi  T,  Khan  HM.  Possible applications of Pharmaco-EcoMicrobiology in life sciences. In: Handbook of Research on Pharmacoinformatic: Technologies, Theories and Applications. Gasmelseid TM (Ed.). IGI Global publication, Hershey, PA, USA. </br>
+<a href="mishrahemant.github.io/Abstract/Pharmaco.pdf">
+		<b>[<i>Full Text</i>]</b></a>
+ <div class="box">
+  <embed src="mishrahemant.github.io/Abstract/Pharmaco.pdf" width="1100" height="400" />
+</div> </br>
+
+<p>BC01: Letter to editor published in the leading newspaper of India, “THE HINDU” on January 28, 2008 for emphasizing the importance of youth scientific awareness on sex education in view of HIV and TB spread.</p>
+
+	</div>
+	</div>	
+</td>
+
+<td> <div id="divPatentsPanel" style="display:none;">
+	<div id="content-professional" style="border:solid; border-width:1px; border-color:grey;"> 
+	 <div id="content-professionalheader">Patents and Innovations</div>
+		
+	<p>•   MISHRA, Hemant, Kumar [IN/US]; US (Inventor), Title: ENGINEERING HUMAN CD64 CHIMERIC RECEPTORS FOR IMMUNE THERAPY:
+		APPLICATION IN CANCER TREATMENT AND IMMUNOTHERAPY, License Acquired</p>
+			<a href="mishraspring.github.io/CD64PATENT.pdf">
+		<b>[<i>Full Text</i>]</b></a>
+  <div class="box">
+     <embed src="mishraspring.github.io/CD64PATENT.pdf " width="1100" height="400" />
+</div> <br>
+   	  <a href="https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2019084388">
+		<b><i>Publication Number:WO/2019/084388, Publication Date:02.05.2019,
+	       International Application No. PCT/US2018/057689, International Filing Date:26.10.2018,<br>
+               Title: Recombinant Immune Cells, Methods of Making, And Methods of Use</i></b></a>
+  <div class="box">
+  <embed src="https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2019084388" width="1100" height="400" /> <br>
+	<a href="https://scholar.google.com/citations?hl=en&user=i8IMf6wAAAAJ"><b>[<i>Google Scholar Citations</i>]</b> </a>
+  </div> 
+    
+	<p> •	MISHRA, Hemant, Kumar [IN/US]; US (Inventor),
+               Title: TARGETED ADAM17 BLOCKER COMPOUNDS, METHODS OF MAKING, AND METHODS OF USING.  (Application under process).</a> </p>
+	<p> •	MISHRA, Hemant, Kumar [IN/US]; US (Inventor),
+               Title: Human anti-ADAM17 antibodies and methods  (Application under process).</a> </p>
+	<p> •	MISHRA, Hemant, Kumar [IN/US]; US (Inventor),
+               Title: Canine anti-ADAM17 antibodies and methods  (Application under process).</a> </p>
+	<p> •	MISHRA, Hemant, Kumar [IN/US]; US (Co-investigator),
+               Title: THE EFFECT OF THE NATURAL MATRIX BIO POLYMER MEMBRANE (NMBM) ON LEG ULCER (FDA approval under process).</a> </p>
+	</div>
+ </div>
+</td>
+<td>
+ <div id="divNewsPanel" style="display:none;"> 
+	<div id="content-professional" style="border:solid; border-width:1px; border-color:grey;"> 
+		<div id="content-professionalheader">AWARDS, NEWS AND UPDATES</div>
+		
+		<div> 
+		<img src="https://github.com/mishraspring/mishraspring.github.io/blob/master/News/CPT.png?raw=true" id="covidNews">
+		</div>
+		</br></br>
+		<div> 
+		<img src="https://github.com/mishraspring/mishraspring.github.io/blob/master/News/PTT.png?raw=true" id="covidNews1"> 
+		</div>
+		</br></br>
+	        <div> 
+		<img src="https://github.com/mishraspring/mishraspring.github.io/blob/master/News/RRG.png?raw=true" id="covidNews1"> 
+		</div>
+		</br></br>
+		<div>
+		<img src="https://github.com/mishraspring/mishraspring.github.io/blob/master/News/MRGG.png?raw=true" id="covidNews1"> 
+	        </br></br>
+		</div>	
+
+                <div>
+		<img src="https://github.com/mishraspring/mishraspring.github.io/blob/master/News/CDA.png?raw=true" id="covidNews1"> 
+	        </br></br>
+		</div>
+
+	        <div>
+		<img src="https://github.com/mishraspring/mishraspring.github.io/blob/master/News/Cancer.png?raw=true" id="Cancernews">
+		</div>
+		</br></br>
+		<div>
+		<img src="https://github.com/mishraspring/mishraspring.github.io/blob/master/News/sepsisjlb.png?raw=true" id="covidNews1"> 
+	        </br></br>
+		</div>	
+		</br></br>
+		<div>
+		<img src="https://github.com/mishraspring/mishraspring.github.io/blob/master/News/JLB.png?raw=true" id="covidNews1"> 
+	        </br></br>
+		</div>	
+		</br></br>
+
+		<div> 
+		<img src="https://github.com/mishraspring/mishraspring.github.io/blob/master/News/JLBE.png?raw=true" id="Cancernews">
+		</div>
+	        </br></br>
+
+		<div> 
+		<img src="https://github.com/mishraspring/mishraspring.github.io/blob/master/News/TANC.png?raw=true" id="Cancernews">
+		</div>
+	        </br></br>
+
+                <div> 
+		<img src="https://github.com/mishraspring/mishraspring.github.io/blob/master/News/icomos.png?raw=true" id="Cancernews">
+		</div>
+		</br></br>
+		<div> 
+		<img src="https://github.com/mishraspring/mishraspring.github.io/blob/master/News/POPD.png?raw=true" id="Cancernews">
+		</div>
+		</br></br>
+		<div> 
+		<img src="https://github.com/mishraspring/mishraspring.github.io/blob/master/News/POPDN.png?raw=true" id="Cancernews">
+		</div>
+		</br></br>
+		<div> 
+		<img src="https://github.com/mishraspring/mishraspring.github.io/blob/master/News/FTA.png?raw=true" id="Cancernews">
+		</div>
+		</br></br>
+	</div>
+ </div>
+
+</td>
+
+</tr>
+						    
+</table>
+</div> <!-- cd-panel -->
+
+
+</div>
+
+</div>
+<!-- hitwebcounter Code START -->
+<a href="https://www.hitwebcounter.com" target="_blank">
+<img src="https://hitwebcounter.com/counter/counter.php?page=7193128&style=0006&nbdigits=5&type=page&initCount=0" title="Free-Counter" Alt="hitwebcounter"   border="0" >
+</a>    
+	</main>
+	
+	<!-- BEGIN UofM FOOTER -->
+	<footer id="umnhf-f" class="umnhf">
+		<h2 class="umnhf-f-title visually-hidden">Morris Campus</h2>
+		<nav class="umnhf-f-cl umnhf f-sfs">
+			<h3 class="umnhf-f-title umnhf-f-title-closed">Students, Faculty, and Staff</h3>
+			<ul>
+				<li><a href="http://www.d.umn.edu/onestop">One Stop</a></li>
+				<li><a href="https://www.myu.umn.edu/">My U <span></span></a></li>
+			</ul>
+		</nav>
+		<nav class="umnhf-f-cl umnhf f-first">
+			<h3 class="umnhf-f-title umnhf-f-title-closed">TWIN CITIES CAMPUS</h3>
+			<ul>
+				<li><a href="https://www.pts.umn.edu/">Parking & Transportation</a></li>
+				<li><a href="https://diversity.umn.edu/">Office of Equity & Diversity</a></li>
+				<li><a href="https://safe-campus.umn.edu/">Safe Campus</a></li>
+			</ul>
+			
+			<h3 class="umnhf-f-title umnhf-f-title-closed">Contact</h3>
+			<ul>
+				<li><a href="https://twin-cities.umn.edu/contact">Contact Us</a></li>
+			</ul>
+			<h2 class="visually-hidden umnhf-f-social1">Connect on Social Media</h2>
+			<ul  class="umnhf-f-sm umnhf-f-social1">
+				<li class="facebook"><a href="#"><span class="visually-hidden">Facebook</span></a></li><li class="twitter"><a href="#"><span class="visually-hidden">Twitter</span></a></li><li class="google-plus"><a href="#"><span class="visually-hidden">Google Plus</span></a></li><li class="linkedin"><a href="#"><span class="visually-hidden">Linked In</span></a></li><li class="youtube"><a href="#"><span class="visually-hidden">YouTube</span></a></li>
+			</ul>
+		</nav>
+		<nav class="umnhf-f-cl umnhf">
+			<h3 class="umnhf-f-title umnhf-f-title-closed">Search</h3>
+			<ul>
+				<li><a href="http://employment.umn.edu">Jobs</a></li>
+				<li><a href="https://twin-cities.umn.edu/news-events">News & Events</a></li>
+				<li><a href="https://twin-cities.umn.edu/alumni">Alumni Resources</a></li>
+				<li><a href="https://directory.umn.edu/">Directory</a></li>
+			</ul>
+		</nav>
+		<nav class="umnhf-f-cl umnhf">
+			<h3 class="umnhf-f-title umnhf-f-title-closed">Visit</h3>
+			<ul>
+				<li><a href="https://campusmaps.umn.edu/">Campus Map</a></li>
+			</ul>
+			<h3 class="umnhf-f-title umnhf-f-title-closed">Give</h3>
+			<ul>
+				<li><a href="https://give.umn.edu/">Support the U of M Twin Cities</a></li>
+			</ul>
+		</nav>
+		<!-- Optional campus links -->
+		<nav class="umnhf-f-cl campuses">
+			<h3 class="umnhf-f-title umnhf-f-title-closed visually-hidden">Campuses</h3>
+			<ul><li><a href="http://www.crk.umn.edu/">Crookston</a></li><li><a href="http://www.d.umn.edu/" class="home">Duluth</a></li><li><a href="http://www.morris.umn.edu/">Morris</a></li><li><a href="http://www.r.umn.edu/">Rochester</a></li><li class="active"><a href="http://twin-cities.umn.edu/">Twin Cities</a></li></ul>
+		</nav>
+		<nav id="umnhf-f-social2">
+		<h2 class="visually-hidden">Connect on Social Media</h2>
+		<ul  class="umnhf-f-sm">
+			<li class="facebook"><a href="#"><span class="visually-hidden">Facebook</span></a></li><li class="twitter"><a href="#"><span class="visually-hidden">Twitter</span></a></li><li class="google-plus"><a href="#"><span class="visually-hidden">Google Plus</span></a></li><li class="linkedin"><a href="#"><span class="visually-hidden">Linked In</span></a></li><li class="youtube"><a href="#"><span class="visually-hidden">YouTube</span></a></li>
+		</ul>
+		</nav>
+		<div class="umnhf-f-cl umnhf f-last">
+			<small>&copy; 2015 Regents of the University of Minnesota.<br/>All rights reserved.</small>
+			<small>The University of Minnesota is an equal opportunity educator and employer.<br/><a href="http://privacy.umn.edu">Privacy Statement</a></small>
+			<!--Optional last updated date. -->
+			<small>Current as of <time datetime="2015-02-20" id="cdate">February 20, 2015</time></small>
+		</div>
+	</footer>
+	<!-- END UofM FOOTER -->
+
+
+
+<!---- Code for slider and videos --->
+	
+
+	
 <!--/.header-->
 <div id="#top"></div>
 <section id="home" class="page-section">
